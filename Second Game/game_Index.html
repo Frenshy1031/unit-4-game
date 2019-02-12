@@ -1,80 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crystals Collector Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crystals Collector Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
 </head>
+
 <body style="background-image: url(18.jpg)">
-        <h1>Crystal Collector</h1>
-    
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <h5 class="text-white h4">Rules</h5>
-                <span class="text-muted"><p>You will be given a random number at the start of the game. </p>
-                  <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                  <p>You win the game by matching your total score to the ramdom number, you lose the game if your total score goes above the random number.</p>
-                  <p>The value of each crystal is hidden from you until you click on it.</p>
-                  <p>  Each time when the game starts, the game will change the values of each crystal.</p></span>
-              </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                
-              </button>
-            </nav>
+  <h1>Crystal Collector</h1>
+
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Rules</h5>
+        <span class="text-muted">
+          <p>You will be given a random number at the start of the game. </p>
+          <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</p>
+          <p>You win the game by matching your total score to the ramdom number, you lose the game if your total score
+            goes above the random number.</p>
+          <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p> Each time when the game starts, the game will change the values of each crystal.</p>
+        </span>
+      </div>
     </div>
-    <br>
-    
-   
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+    </nav>
+  </div>
+  <br>
   <div class="row">
-        <div id = "redCrystal" class="card myCrystal" style="width: 8rem;">
-          <img  src="assets/images/Red.jpg" class="card-img-top" alt="...">
-           <div class="card-img-overlay">
-    
-              </div>
-          </div>
-      
-              <div id ="blueCrystal" class="card myCrystal" style="width: 8rem;">
-                     <img src="assets/images/blue.jpg" class="card-img-top" alt="...">
-              <div class="card-img-overlay">
-           </div>
-      </div>
-         <div id ="yellowCrystal" class="card" style="width: 8rem;">
-          <img src="assets/images/yellow.jpg" class="card-img-top" alt="...">
-          <div class="card-img-overlay">
-      </div>
-     </div>
-         <div class="card" style="width: 8rem;">
-            <img id= "greenCrystal" src="assets/images/green.jpg" class="card-img-top" alt="...">
-               <div class="card-img-overlay">
-        </div>
-      </div>
-      </div>
+    <div id="red" class="card myCrystal" style="width: 8rem;">
+      <img src="assets/images/Red.jpg" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
 
-     <div id="randomnumb-and-scoreboard">
-            <div id="random-number-generator">
-    <span id="random-number"></span>
-    </div>
-            <div id="score-board">
-    <span id="win-or-lose"></span>
-            <h3>Wins: <span id="win-counter">0</span></h3>
-             <h3>Losses: <span id="loss-counter">0</span></h3>
-        </div>
-    </div>
-    <div id="current-score">
-        <h1>Your Score:</h1>
-        <span id="current-score-counter"></span>
+      </div>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/Javascript/javaScript.js"></script>
- <link rel="stylesheet" href="assets/CSS/style.css">
+    <div id="blue" class="card myCrystal" style="width: 8rem;">
+      <img src="assets/images/blue.jpg" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+    <div id="yellow" class="card" style="width: 8rem;">
+      <img src="assets/images/yellow.jpg" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+    <div class="card" style="width: 8rem;">
+      <img id="green" src="assets/images/green.jpg" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3>Target Score</h3>
+    <p id="randomNumner"></p>
+  </div>
+
+  <div>
+    <h3>Wins</h3>
+    <p id="win-counter"></p>
+  </div>
+  <div>
+
+    <h3>Losses:</h3>
+    <p id="loss-counter"></p>
+  </div>
+
+  <div>
+    <h3>Your Score:</h3>
+    <p id="user-total"></p>
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/Javascript/game.js"></script>
+  <link rel="stylesheet" href="assets/CSS/style.css">
 </body>
+
 </html>
