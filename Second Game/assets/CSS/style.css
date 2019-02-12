@@ -1,0 +1,29 @@
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:green;
+    font-size: 60px;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:green;
+    font-size: 30px;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:green;
+    font-size: 30px;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+.card{
+	display: block;
+	float: left;
+	width: 5%;
+        
+}
+navbar{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 18px;
+}
